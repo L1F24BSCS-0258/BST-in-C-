@@ -83,16 +83,17 @@ public:
     }
 };
 
-// void reverselist(CNode<int>* curr)
-// {
-//     CNode<int>* prev = ->next;
-//     CNode<int>* right = curr->next;
+void reverselist(CircularLinkedList<int> list)
+{
+    CNode<int>* prev = list.getlast();
+    CNode<int>* curr = list.getHead();
+    CNode<int>* right = curr->next;
 
-//     while(prev->next != prev)
-//     {
-
-//     }
-// }
+    while()
+    {
+        
+    }
+}
 
 int main()
 {
@@ -105,7 +106,6 @@ int main()
     list.insertEnd(6);
     list.display();
 
-    CNode<int>* temp = list.getlast();
-    cout<<"Last "<<temp->data;
+    reverselist(list);
     return 0;
 }
